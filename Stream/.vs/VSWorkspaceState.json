@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Stream",
+    "\\Stream\\Controllers",
+    "\\Stream\\Scripts",
+    "\\Stream\\Scripts\\app",
+    "\\Stream\\Scripts\\app\\Controllers",
+    "\\Stream\\Testimonies\\English",
+    "\\Stream\\Testimonies\\English\\Images",
+    "\\Stream\\Views",
+    "\\Stream\\Views\\Home",
+    "\\Stream\\Views\\Shared"
+  ],
+  "SelectedNode": "\\Stream\\Stream.csproj",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,10 @@
+﻿<div ng-app="streamApp">
+    <div ng-controller="StreamController">
+        <ul class="main-header"><li class="header-items" ng-repeat="lang in Languages" ng-click="onMenuSelect(lang)" ng-class="(selectedLanguage==lang.Language)?'selected':">{{lang.Language}}</li></ul>
+       @* <select data-ng-options="lang.Language for lang in Languages" data-ng-model="selectedLanguage"></select>*@
+        <br/>
+        <br/>
+        <div>{{selectedLanguage.WelcomeMessage}}</div>
+
+    </div>
+</div>

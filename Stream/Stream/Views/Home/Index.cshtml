@@ -1,0 +1,28 @@
+﻿<div ng-app="streamApp">
+    <div ng-controller="StreamController">
+        <ul class="main-header">
+        <li class="header-items" ng-repeat="lang in Languages" ng-click="onMenuSelect($index)" >
+            {{lang.Language}}
+        </li>
+        </ul>
+        <ul class="main-header" ng-show="selectedIndex>=0">
+            <li class="header-items" ng-click="onSubMenuSelect('video')" >
+                {{Languages[selectedIndex].Video}}
+            </li>
+            <li class="header-items" ng-click="onSubMenuSelect('audio')" >
+                {{Languages[selectedIndex].Audio}}
+            </li>
+            <li class="header-items" ng-click="onSubMenuSelect('images')" >
+                {{Languages[selectedIndex].Images}}
+            </li>
+        </ul>
+         <br />
+        <br />
+
+        <div>{{Languages[selectedIndex].WelcomeMessage}}</div>
+
+       @* <ng-include src="'Home/Images'"></ng-include>*@
+        <image-view></image-view>
+
+    </div>
+</div>
